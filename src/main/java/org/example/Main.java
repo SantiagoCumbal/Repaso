@@ -1,4 +1,5 @@
 package org.example;
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.*;
@@ -7,6 +8,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        /*
+        //EJERCICIO 1
         //Objeto
         Scanner x = new Scanner(System.in);
         Estudiantes new1 = new Estudiantes();
@@ -37,6 +40,21 @@ public class Main {
 
         } catch (SQLException e1) {
             System.out.println(e1.getMessage());
-        }
+        }*/
+        /*
+        //Ejercicio 2
+        JFrame fr = new JFrame("Aplicación");
+        fr.setContentPane(new form1().MainPanel);
+        fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        fr.setSize(700, 700);
+        fr.setVisible(true);
+         */
+
+        //Ejercicio 3
+        JFrame fr = new JFrame("Aplicación");
+        fr.setContentPane(new form2().MainPanel);
+        fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        fr.setSize(600, 300);
+        fr.setVisible(true);
     }
 }
